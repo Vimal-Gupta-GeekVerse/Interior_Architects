@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="image/Fevicon_logo.png" />
+    <title> Product Gallery | Interior Architects</title>
+    <!-- Meta Robots (SEO Indexing): -->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Discover innovative and elegant interior architecture solutions. Our expert architects and designers transform spaces into functional, stylish environments tailored to your vision.">
+    <meta name="keywords" content="interior architects, architectural design, home interiors, commercial interiors, space planning, luxury interiors, modern design">
+    <meta name="author" content="Interior Architects Demo">
+    
+    <link fetchpriority="high" rel="preload" href="image/Interior-logo-design.png" as="image" type="image/png" />
+    <link fetchpriority="high" rel="preload" href="image/ContactBanner.jpg" as="image" type="image/jpg" />
+    <!-- Preload -->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <!-- <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Spotlight_style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <link rel="preconnect" href="https://kit.fontawesome.com" />
+    <link rel="dns-prefetch" href="https://kit.fontawesome.com" />
+    <script src="https://kit.fontawesome.com/52ca9e0df4.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="about.html"
+            ><img src="image/Interior-logo-design.png" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav mx-auto my-2 my-lg-0"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link fsP Fcolor fw-bolder fsP Fcolor fw-bolder"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fsP Fcolor fw-bolder" href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fsP Fcolor fw-bolder" href="services.html"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fsP Fcolor fw-bolder" href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active fsP Fcolor fw-bolder"
+                  href="productGallery.html"
+                  >Products</a
+                >
+              </li>
+            </ul>
+
+            <a href="#" class="btn mbtn px-md-4 py-md-3">Get A Quote </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- banner section start-->
+    <section class="AboutBanner">
+      <img src="image/ContactBanner.jpg" alt="Banner Image" />
+      <div class="container">
+        <h1 class="h1">Product Gallery</h1>
+      </div>
+    </section>
+
+    <!-- banner section end-->
+
+    <!-- unique design section start  -->
+
+    <section class="uniqueDesign deafaultPadding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="UniqueImg">
+              <img loading="lazy" src="image/UniqueDesigns1.png" alt="Interior Room pic"  data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"/>
+              <img loading="lazy" src="image/UniqueDesigns2.png" data-aos-delay="200" alt="Interior Room pic"  data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="h1 Fcolor">Unique Design With Comfort</h2>
+            <p class="fsP Fcolor">
+              Transform your living spaces with our Unique Design With Comfort
+              philosophy. Our vision is to blend cutting-edge aesthetics with
+              ultimate cosiness, crafting interiors that not only look stunning
+              but also feel just right. We believe that every element, from the
+              carefully selected furniture to the subtle nuances of lighting,
+              should contribute to a harmonious and inviting environment.
+              Whether you're relaxing after a long day or hosting a gathering,
+              our designs ensure that your home is a true sanctuary, radiating
+              elegance and comfort in every corner.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- unique design section end -->
+
+
+    <!-- spotlight Gallery  -->
+
+    <section class="productGallery deafaultPadding">
+      <div class="container">
+        <h2 class="h1 text-center">Explore Our Work</h2>
+
+        <div class="spotlight-group row">
+          <div
+            class="spotlight col-lg-4 col-md-6"
+            data-media="image"
+            data-aos="zoom-in-up"
+            data-src="image/GalleryProduct1.png"
+            data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim."
+          >
+            <div class="caption7">
+              <h2 class="fsP fw-bold mb-4">Modern 4 BHK Apartment</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tristique integer ante
+                diam in in nisl non. Ultrices nibh vestibulum eget accumsan
+                libero dolor quis. Tortor quis mi phasellus scelerisque.
+              </p>
+            </div>
+            <div class="ImgwrapGallery">
+              <img loading="lazy" 
+                class="inverted-radius"
+                src="image/GalleryProduct1.png"
+                alt="Modern 4 BHK Apartment"
+              />
+              <div class="Tagwrap">
+                <span class="Tags">2024</span>
+                <span class="Tags">Apartment</span>
+                <span class="Tags">Residential</span>
+              </div>
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="spotlight col-lg-4 col-md-6"
+            data-media="image"
+            data-aos="zoom-in-up"
+            data-title="Modern 4 BHK Apartment"
+            data-src="image/pexels-fotios-photos-1090638.jpg"
+            data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim."
+          >
+            <div class="caption7">
+              <h2 class="fsP fw-bold mb-4">Modern 4 BHK Apartment</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tristique integer ante
+                diam in in nisl non. Ultrices nibh vestibulum eget accumsan
+                libero dolor quis. Tortor quis mi phasellus scelerisque.
+              </p>
+            </div>
+            <div class="ImgwrapGallery">
+              <img loading="lazy"
+                class="inverted-radius"
+                src="image/pexels-fotios-photos-1090638.jpg"
+                alt="Modern 4 BHK Apartment"
+              />
+              <div class="Tagwrap">
+                <span class="Tags">2024</span>
+                <span class="Tags">Apartment</span>
+                <span class="Tags">Residential</span>
+              </div>
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="spotlight col-lg-4 col-md-6"
+            data-media="image"
+            data-aos="zoom-in-up"
+            data-title="Modern 4 BHK Apartment"
+            data-src="image/GalleryProduct3.png"
+            data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim."
+          >
+            <div class="caption7">
+              <h2 class="fsP fw-bold mb-4">Modern 4 BHK Apartment</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tristique integer ante
+                diam in in nisl non. Ultrices nibh vestibulum eget accumsan
+                libero dolor quis. Tortor quis mi phasellus scelerisque.
+              </p>
+            </div>
+            <div class="ImgwrapGallery">
+              <img loading="lazy"
+                class="inverted-radius"
+                src="image/GalleryProduct3.png"
+                alt="Modern 4 BHK Apartment"
+              />
+              <div class="Tagwrap">
+                <span class="Tags">2024</span>
+                <span class="Tags">Apartment</span>
+                <span class="Tags">Residential</span>
+              </div>
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="spotlight col-lg-4 col-md-6"
+            data-media="image"
+            data-aos="zoom-in-up"
+            data-title="Modern 4 BHK Apartment"
+            data-src="image/GalleryProduct4.png"
+            data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim."
+          >
+            <div class="caption7">
+              <h2 class="fsP fw-bold mb-4">Modern 4 BHK Apartment</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tristique integer ante
+                diam in in nisl non. Ultrices nibh vestibulum eget accumsan
+                libero dolor quis. Tortor quis mi phasellus scelerisque.
+              </p>
+            </div>
+            <div class="ImgwrapGallery">
+              <img loading="lazy"
+                class="inverted-radius"
+                src="image/GalleryProduct4.png"
+                alt="Modern 4 BHK Apartment"
+              />
+              <div class="Tagwrap">
+                <span class="Tags">2024</span>
+                <span class="Tags">Apartment</span>
+                <span class="Tags">Residential</span>
+              </div>
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="spotlight col-lg-4 col-md-6"
+            data-media="image"
+            data-aos="zoom-in-up"
+            data-title="Modern 4 BHK Apartment"
+            data-src="image/GalleryProduct5.png"
+            data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim."
+          >
+            <div class="caption7">
+              <h2 class="fsP fw-bold mb-4">Modern 4 BHK Apartment</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tristique integer ante
+                diam in in nisl non. Ultrices nibh vestibulum eget accumsan
+                libero dolor quis. Tortor quis mi phasellus scelerisque.
+              </p>
+            </div>
+            <div class="ImgwrapGallery">
+              <img loading="lazy"
+                class="inverted-radius"
+                src="image/GalleryProduct5.png"
+                alt="Modern 4 BHK Apartment"
+              />
+              <div class="Tagwrap">
+                <span class="Tags">2024</span>
+                <span class="Tags">Apartment</span>
+                <span class="Tags">Residential</span>
+              </div>
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="spotlight col-lg-4 col-md-6"
+            data-media="image"
+            data-aos="zoom-in-up"
+            data-title="Modern 4 BHK Apartment"
+            data-src="image/GalleryProduct6.png"
+            data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim."
+          >
+            <div class="caption7">
+              <h2 class="fsP fw-bold mb-4">Modern 4 BHK Apartment</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tristique integer ante
+                diam in in nisl non. Ultrices nibh vestibulum eget accumsan
+                libero dolor quis. Tortor quis mi phasellus scelerisque.
+              </p>
+            </div>
+            <div class="ImgwrapGallery">
+              <img loading="lazy"
+                class="inverted-radius"
+                src="image/GalleryProduct6.png"
+                alt="Modern 4 BHK Apartment"
+              />
+              <div class="Tagwrap">
+                <span class="Tags">2024</span>
+                <span class="Tags">Apartment</span>
+                <span class="Tags">Residential</span>
+              </div>
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="spotlight col-lg-4 col-md-6"
+            data-media="image"
+            data-aos="zoom-in-up"
+            data-title="Modern 4 BHK Apartment"
+            data-src="image/GalleryProduct7.png"
+            data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim."
+          >
+            <div class="caption7">
+              <h2 class="fsP fw-bold mb-4">Modern 4 BHK Apartment</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tristique integer ante
+                diam in in nisl non. Ultrices nibh vestibulum eget accumsan
+                libero dolor quis. Tortor quis mi phasellus scelerisque.
+              </p>
+            </div>
+            <div class="ImgwrapGallery">
+              <img loading="lazy"
+                class="inverted-radius"
+                src="image/GalleryProduct7.png"
+                alt="Modern 4 BHK Apartment"
+              />
+              <div class="Tagwrap">
+                <span class="Tags">2024</span>
+                <span class="Tags">Apartment</span>
+                <span class="Tags">Residential</span>
+              </div>
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="spotlight col-lg-4 col-md-6"
+            data-media="image"
+            data-aos="zoom-in-up"
+            data-title="Modern 4 BHK Apartment"
+            data-src="image/GalleryProduct8.png"
+            data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim."
+          >
+            <div class="caption7">
+              <h2 class="fsP fw-bold mb-4">Modern 4 BHK Apartment</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tristique integer ante
+                diam in in nisl non. Ultrices nibh vestibulum eget accumsan
+                libero dolor quis. Tortor quis mi phasellus scelerisque.
+              </p>
+            </div>
+            <div class="ImgwrapGallery">
+              <img loading="lazy"
+                class="inverted-radius"
+                src="image/GalleryProduct8.png"
+                alt="Modern 4 BHK Apartment"
+              />
+              <div class="Tagwrap">
+                <span class="Tags">2024</span>
+                <span class="Tags">Apartment</span>
+                <span class="Tags">Residential</span>
+              </div>
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="spotlight col-lg-4 col-md-6"
+            data-media="image"
+            data-aos="zoom-in-up"
+            data-title="Modern 4 BHK Apartment"
+            data-src="image/GalleryProduct9.png"
+            data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim."
+          >
+            <div class="caption7">
+              <h2 class="fsP fw-bold mb-4">Modern 4 BHK Apartment</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Tristique integer ante
+                diam in in nisl non. Ultrices nibh vestibulum eget accumsan
+                libero dolor quis. Tortor quis mi phasellus scelerisque.
+              </p>
+            </div>
+            <div class="ImgwrapGallery">
+              <img  loading="lazy"
+                class="inverted-radius"
+                src="image/GalleryProduct9.png"
+                alt="Modern 4 BHK Apartment"
+              />
+              <div class="Tagwrap">
+                <span class="Tags">2024</span>
+                <span class="Tags">Apartment</span>
+                <span class="Tags">Residential</span>
+              </div>
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- spotlight Gallery End -->
+
+    <footer class="backgr">
+      <div class="container footer2 py-md-5 py-2">
+        <div class="row py-md-5 py-2  justify-content-between">
+          <div class="col-md-3 logopart">
+            <a class="navbar-brand d-block mb-4" href="index.html">
+              <img loading="lazy" class="w-100" src="image/Interior-logo-design.png" alt="Logo" />
+            </a>
+            <p class="fsP"> We are experienced professionals who understand that it services is changing, and are true partners who care about your future business success. </p>
+            <a href="#" class="icon">
+              <i class="social fa-brands fa-facebook-f green" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-brands fa-instagram green" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="social fa-brands fa-twitter green" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="col-auto  mt-4 mt-lg-0">
+            <div>
+              <h2 class="fsP fw-bold text-capitalize mb-4">company</h2>
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                  <a href="productGallery.html">Products</a>
+                </li>
+                <li>
+                  <a href="services.html">Services</a>
+                </li>
+                <li>
+                  <a href="#">Investors</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-4 col-xxl-3  contactFooter  mt-4 mt-lg-0">
+            <h2 class="fsP fw-bold  text-capitalize mb-4">Contact Us</h2>
+            <address>
+              <a target="_blank" href="https://maps.app.goo.gl/1K1hAS7J7qwdaUB39">
+                <i class="fa-solid fa-location-arrow" aria-hidden="true"></i> 456 Wellness Avenue, London, UK </a>
+            </address>
+            <a href="tel:+919198782842">
+              <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i> +91 9198782842 </a>
+            <a href="mailto:info@interiorarchitects.com">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i> info@interiorarchitects.com </a>
+          </div>
+          <div class="col-md-3  mt-4 mt-lg-0">
+            <h2 class="fsP fw-bold text-capitalize mb-4">We're Hiring</h2>
+            <p class="fsP">Interested in joining the Architects team?</p>
+            <a class="fsP text-capitalize fw-bold green" href="#">Our Careers &nbsp; <i class="fa-regular fa-circle-right"></i>
+            </a>
+          </div>
+        </div>
+        <p class="fsP text-center darkGr pt-md-5 pt-2 mb-0"> ©2024 Interior Architects, All Rights Reserved. </p>
+      </div>
+    </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/spotlight.bundle.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+
+      AOS.init();
+
+      
+      lightGallery(document.getElementById("relative-caption"), {
+        subHtmlSelectorRelative: true,
+        speed: 500,
+        plugins: [lgZoom],
+      });
+    </script>
+
+  </body>
+</html>

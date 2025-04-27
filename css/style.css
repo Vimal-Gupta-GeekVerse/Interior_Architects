@@ -7,6 +7,13 @@ body{
 }
 
 
+:root {
+    --lightBG: #c9c9b6;
+    --lightBrown: #848475;
+    --HoverBrown: #5c5b4d;
+  }
+
+
 .btn-check:focus+.btn, .btn:focus {
     outline: 0;
     box-shadow: none;
@@ -17,26 +24,19 @@ body{
 .navbar-brand img{
     width: 100%;
 }
-.hamburger:hover{
-    color: #db545a;
+
+
+
+.navbar-nav{
+    gap: 30px;
 }
-.offcanvas-start{
-    background-color: #000000;
-}
-.offcanvas-start .btn{
-    color: #ffffff;
-    font-size: calc(15px + 0.390625vw);
-}
-.btn-close{
-    background-image: url('../image/🦆\ icon\ _Times\ Circle_.svg');
-}
-.btn-close:focus {
-    box-shadow:none;
+.nav-item .nav-link:hover {
+    color: var(--HoverBrown);
 }
 
-.offcanvas-start {
-    width: 30vw;
-}
+
+
+
 .pict{
     position: relative;
     z-index: 1;
@@ -212,6 +212,597 @@ background-color: #5c5b4d;
 }
 
 
+
+ /* *******************
+ ***About Us Page***
+ ******************* */
+
+ 
+ .AboutBanner{
+    position: relative;
+ }
+.AboutBanner img{
+width: 100%;
+}
+
+.AboutBanner .h1{
+    color: #ffffff;
+    padding: 10px 20px;
+    background: rgba(92, 91, 77, 0.75);
+    display: table;
+    margin: auto;
+}
+.AboutBanner .container{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+/* banner section end */
+
+/* our story section start */
+.OurStory{
+    background-color: var(--lightBG);
+    color: var(--HoverBrown);
+    position: relative;
+}
+.OurStory ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    row-gap: 24px;
+    list-style: disc;
+    margin: 24px 0;
+    padding: 0;
+}
+.OurStory .h1{
+    margin-bottom: 40px;
+}
+
+.submenu{
+    margin-bottom: 16px;
+    display: inline-block;
+ }
+
+.OurStory ul li {
+    flex-basis: 235px;
+}
+
+.deafaultPadding{
+    padding: 80px 0px;
+}
+
+.OurStory .patti {
+    height: 90%;
+   top: 0;
+    bottom: 0;
+    right: 5%;
+    z-index: 1; 
+}
+.OurStory img{
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+    width: 100%;
+}
+.imgpartOurstory{
+    align-self: stretch;
+}
+/* our story section end */
+
+/* our vision section start */
+
+.VisionCard{
+    background-color: #ffffff;
+}
+.OurVision{
+    position: relative;
+    color: var(--HoverBrown);
+    background: url('../image/OurVision.png') no-repeat;
+    background-position-x: calc(100% - 7%);
+    background-position-y: 40px;
+    background-size: auto 80%;
+}
+.OurVision .h1 {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.OurVision.deafaultPadding{
+    padding: 130px 0px;
+}
+.OurVision .patti {
+    height: 85%;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    z-index: 0;
+}
+.OurVision .row{
+    position: relative;
+    z-index: 2;
+}
+
+/* statistics section start */
+.statistics .h1{
+color: var(--HoverBrown);
+}
+
+/* statistics section start */
+
+
+ /* ****************
+ ***Services Page***
+ *******************/
+
+ /* Working experience section start */
+ .WorkingSince{
+    background-color: var(--lightBG);
+ }
+ .imgWorking,.imgWorking2{
+    position: relative;
+    margin-bottom: 15%;
+ }
+ .imgWorking::after,.imgWorking2::after{
+ content: "";
+ position: absolute;
+ width: 90%;
+ height: 100%;
+ right: 0%;
+ bottom: -15%;
+ background-color: var(--HoverBrown);
+ }
+ .imgWorking img, .imgWorking2 img{
+    width: 90%;
+    position: relative;
+    z-index: 1;
+ }
+
+ .imgWorking2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+ }
+ .imgWorking2::after{
+    width: 90%;
+    height: 100%;
+    left: 0;
+    bottom: -15%;
+ }
+ .WorkingSince .h1,  .ServicesCards .h1,.Testimonials .h1 {
+    margin-bottom: 40px;
+    color: var(--HoverBrown);
+}
+.WorkingSince p{
+    color: var(--HoverBrown);
+}
+
+ /* Working experience section end */
+
+
+
+ /* services section start  */
+  .ServicesCards .image-box img {
+    object-fit: cover;
+  }
+
+  .ServicesCards .card-text {
+    text-align: center;
+    background-color: var(--HoverBrown);
+    color: white;
+    padding: 10px;
+    margin-top: 40px;
+  }
+
+  .ServicesCards .card-container {
+    margin: 20px 0;
+  }
+  .ServicesCards .container{
+    position: relative;
+  }
+  .ServicesCards .container::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--lightBG);
+    clip-path: polygon(0% 41.5%, 99.9% 67.8%, 100% 100%, 0% 100%);
+    z-index: -1;
+  }
+  .ServicesCards .card{
+background-color: transparent;
+border: none;
+  }
+  /* services section end  */
+
+  /* Testimonials section start */
+  .Testimonials{
+    border-top: 10px solid var(--HoverBrown);
+  }
+  .Testimonials .rounded-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+ .quote-image .img-fluid{
+    position: relative;
+    z-index: 1;
+ }
+
+  .Testimonials .quote-image {
+    position: relative;
+  }
+
+  .Testimonials .quote-image::after{
+    content: "";
+    width: 60%;
+    aspect-ratio: 1;
+    position: absolute;
+    background-color: var(--lightBrown);
+    bottom: -20px;
+    left: -20px;
+  }
+
+  .Testimonials .quote-symbol {
+    position: absolute;
+    bottom: -70px;
+    right: -10px;
+    font-size: 80px;
+    color: #7A7C6C;
+    z-index: 2;
+  }
+
+  .Testimonials p{
+    width: 90%;
+  }
+  /* Testimonials section end */
+
+
+  
+ /*****************
+ ***Contact Page***
+ ******************/
+
+.contact_socialmedia .container>.row{
+justify-content: flex-end;
+}
+
+.contactCard_icons i{
+display: flex;
+flex-wrap: wrap;
+height: 64px;
+width: 64px;
+justify-content: center;
+align-items: center;
+font-size: 40px;
+color: var(--lightBrown);
+}
+
+
+.contact_socialmedia .h1{
+    color: var(--lightBrown);
+    margin-bottom: 40px;
+}
+
+.contact_socialmedia a{
+    text-decoration: none;
+    color: var(--lightBrown);
+    font-size: 18px;
+}
+.contact_socialmedia  .col-auto a span{
+color: var(--HoverBrown);
+font-size: 20px;
+font-weight: 600;
+padding-right: 5px;
+}
+
+.contact_socialmedia a:hover{
+    color: var(--HoverBrown);
+}
+
+.contact_socialmedia  .contactCardWrapper{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+gap: 40px;
+}
+.contact_socialmedia .Shedule{
+    text-align: center;
+}
+
+.sheduleParrent{
+    align-items: center;
+}
+
+.contact_socialmedia .Shedule span{
+    font-size: 18px;
+    color: #c42d2d;
+    font-weight: 600;
+}
+
+.contact_socialmedia .Shedule i.fa-business-time{
+font-size: 70px;
+color: var(--lightBrown);
+margin-bottom: 40px;
+}
+
+.contact_socialmedia .socialIcons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact_socialmedia .socialIcons a{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 3rem;
+height: 3rem;
+font-size: 1.5rem;
+text-align: center;
+color: #848475;
+border: 2px solid #5c5b4d;
+border-radius: 50px;
+}
+.contact_socialmedia .socialIcons a:hover{
+    color: var(--HoverBrown);
+}
+
+.contact_socialmedia .secH{
+    margin-top: 40px;
+}
+
+.GirlIsCalling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_socialmedia img{
+    width: 100%;
+    max-width: 445px;
+   }
+
+   /* reach us section start */
+.ReachUs{
+    position: relative;
+}
+.ReachUs img{
+    width: 100%;
+}
+
+.ReachUs .container {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    color: #ffffff;
+}
+/* reach us section End */
+
+/* map section start */
+.ContactMap .container{
+border: 10px solid var(--lightBG);
+border-radius: 8px;
+margin-top: -12%;
+position: relative;
+
+z-index: 1;
+}
+.ContactMap {
+    margin-bottom: 50px;
+}
+/* map section End */
+
+
+  
+ /*************************
+ ***Product Gallery Page***
+ **************************/
+
+
+/* unique design section start  */
+.UniqueImg {
+    position: relative;
+}
+.UniqueImg img:nth-child(1){
+ width: 78%;
+ position: relative;
+ margin-left: 22%;
+ margin-top: 20%;
+}
+.UniqueImg img:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 80%;
+}
+.uniqueDesign .fsP{
+    word-spacing: -2px;
+}
+.uniqueDesign .h1{
+    color: var(--lightBrown);
+    margin-bottom: 40px;
+}
+/* unique design section end  */
+
+/* Product Gallery Section start  */
+
+/* fill: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.06) 75%, rgba(0, 0, 0, 0.64) 97%); */
+
+.lg-outer .lg-object{
+    width:70vw;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.productGallery{
+    background-color: var(--lightBG);
+    border-bottom: 10px solid var(--HoverBrown);
+}
+.productGallery .h1{
+    margin-bottom: 80px;
+}
+.productGallery .h1, .productGallery a{
+    color: var(--HoverBrown);
+}
+.productGallery a{
+    text-decoration: none;
+    color: var(--HoverBrown);
+}
+
+/* HTML: <img class="inverted-radius" src="" alt=""> */
+
+.inverted-radius {
+    --r: 30px; /* the radius */
+    --s: 50px; /* the size of the corner*/
+    
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: var(--r);
+    --_m:/calc(2*var(--r)) calc(2*var(--r))
+      radial-gradient(#000 70%,#0000 72%) no-repeat;
+    mask:
+      right 0 bottom calc(var(--s) + var(--r)) var(--_m),
+      right calc(var(--s) + var(--r)) bottom 0 var(--_m),
+      radial-gradient(var(--s) at 100% 100%,#0000 99%,#000 101%) 
+       calc(-1*var(--r)) calc(-1*var(--r)) no-repeat,
+      conic-gradient(from 90deg at calc(100% - var(--s) - 2*var(--r)) calc(100% - var(--s) - 2*var(--r)),
+       #0000 25%,#000 0);
+  }
+
+  .ImgwrapGallery{
+    position: relative;
+  }
+
+  .ImgwrapGallery>span{
+    position: absolute;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--HoverBrown);
+    border-radius: 60px;
+    right: 0;
+    bottom: 0;
+  }
+.Tagwrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    color: #ffffff;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.Tagwrap .Tags{
+    display: inline-block;
+    padding: 2px 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+#relative-caption{
+    row-gap: 70px;
+}
+
+#relative-caption>a{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 15px 15px 40px 40px;
+}
+
+#relative-caption>a:hover{
+background-color: #ffffff75;
+}
+
+#relative-caption h2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#relative-caption p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Product Gallery Section end  */
+
+
+
+
+/* spotlight gallery  */
+
+.spotlight-group{
+    row-gap: 70px;
+}
+
+.spotlight-group>.spotlight {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 15px 15px 40px 40px;
+    color: var(--HoverBrown);
+}
+
+.spotlight-group>.spotlight:hover{
+background-color: #ffffff75;
+}
+
+.spotlight-group h2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spotlight-group p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spotlight img {
+    height: auto;
+    max-height: unset;
+    object-fit: unset;
+}
+
+.spotlight img, .image {
+    width: 100%;
+    height: auto;
+    max-width: unset;
+    margin: 0;
+    content-visibility: auto;
+}
+
+
+
+
 footer.backgr{
     background-color: #c9c9b6;
 }
@@ -228,7 +819,7 @@ footer.backgr{
     border-radius: 50px;
 }
 .logopart a.icon:hover,.footer2 a.fsP:hover{
-    color: #5c5b4d !important;
+    color: #5c5b4d !important; 
 }
 
 a.icon i{
@@ -240,14 +831,20 @@ a.icon i{
     padding: 0;
     list-style: none;
 }
-.footer2 ul a{
-    color: #ffffff;
+.footer2 ul a,.footer2 .contactFooter a{
+    color: var(--HoverBrown);
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer2 ul a:hover,.footer2 .contactFooter a:hover{
+    color: #000000;
 }
 .footer2 p.fsP{
     font-size: calc(12px + 0.390625vw)
 }
 .footer2 .navbar-brand {
     width: 80%;
+    padding-top: 0;
 }
 .footer2 a.fsP{
     color: #848475;
@@ -255,15 +852,15 @@ a.icon i{
 .footer2 h2.fsP {
     color: #5c5b4d;
 }
-.footer2 .col-md-4{
-    padding-top: 20px;
+.footer2 address{
+    margin-bottom: 0;
 }
-.footer2 .col-md-4 a:not(a.fsP){
-    display: inline-block;
-    margin-top: 5px;
-}
-.footer2 .col-md-4 a:not(a.fsP):hover{
-color: #5c5b4d;
+
+.contactFooter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 10px;
 }
 
 
@@ -273,6 +870,16 @@ color: #5c5b4d;
 
 
 
+
+
+
+@media (min-width: 1400px) { 
+    .h1 {
+        font-weight: 700;
+        font-size: min(calc(15px + 2vw), 69px);
+        line-height: 1.1;
+    }
+ }
 
 @media (max-width: 1199.98px) {
     .section1 .container{
@@ -286,11 +893,56 @@ color: #5c5b4d;
         position: relative;
         margin-top: -22vw;
     }
+    .OurVision .patti {
+        height: 85%;
+        left: 0%;
+    }
+    .OurVision {
+        position: relative;
+        color: var(--HoverBrown);
+        background: url(../image/OurVision.png) no-repeat;
+        background-position-x: calc(100%);
+        background-position-y: 40px;
+        background-size: auto 60%;
+    }
+    .OurStory ul li {
+        flex-basis: 171px;
+    }
+
+    .Tagwrap {
+        flex-wrap: wrap-reverse;
+        width: 85%;
+    }
   }
 
   
+  @media only screen and (max-width: 1024px) and (max-height: 1366px) {
+    .OurVision {
+        background: none;
+    }
+    .OurVision .patti {
+        height: 90%;
+        left: 0%;
+        width: 100%;
+    }
+    .OurVision .row{
+        justify-content: center !important;
+    }
+    .OurVision .container>.h1{
+        text-align: center;
+    }
+    .OurVision .container>span{
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
 
  @media (max-width: 991.98px) { 
+    
+.navbar-nav{
+    gap: 0px;
+}
     .section6 .col-md-7 {
         position: relative;
         margin-top: -19vw;
@@ -313,13 +965,50 @@ color: #5c5b4d;
     transform: translateY(-8%);
 }
 
+.OurStory .patti {
+    display: none;
   }
+
+  .WorkingSince .container>.row{
+    flex-direction: column-reverse;
+}
+
+
+  .Testimonials .row {
+   gap: 40px; 
+}
+.GirlIsCalling{
+    margin-bottom: 40px;
+}
+
+.uniqueDesign {
+    text-align: center;
+}
+
+.uniqueDesign .container>.row{
+    row-gap: 40px;
+}
+
+.footer2 .col-md-3{
+    width: 48%;
+}
+.footer2 .col-auto{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+  }
+
 
 
   @media (max-width: 767.98px) { 
     .section1 .container{
         min-height: 570px;
     }
+    .card-container {
+        margin: 10px 0;
+      }
+
     .section3 .justify-content-start{
         margin-top: -50px;
     }
@@ -342,7 +1031,72 @@ color: #5c5b4d;
     .section7 .bdr3{
         border-color: transparent;
     }
+
+    .OurVision.deafaultPadding {
+        padding: 130px 0px;
+        text-align: center;
+    }
+    .OurVision .col-3 {
+    margin: auto;
+    }
+    .OurStory {
+       
+        text-align: center;
+    }
+    .WorkingSince .h1, .ServicesCards .h1, .Testimonials .h1{
+        text-align: center;
+    }
+    .WorkingSince,.ServicesCards,.Testimonials{
+        text-align: center;
+    }
+    .sheduleParrent {
+        row-gap: 40px;
+    }
+
+    .contactCard1{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contact_socialmedia .secH {
+       text-align: center;
+    }
+    .contact_socialmedia .socialIcons{
+        justify-content: center;
+    }
+    .contact_socialmedia .Shedule i.fa-business-time{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .contact_socialmedia h2.fsP{
+        font-size: 24px;
+    }
+   
+    .ContactMap iframe{
+        height: 400px;
+    }
+
+    .footer2 .col-md-3{
+        width: 100%;
+        text-align: center;
+    }
+    .footer2 .col-auto{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer2 .navbar-brand {
+       display: table;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .footer2>.row{
+        row-gap: 30px;
+    }
    }
+
+  
 
   @media (max-width:  575.98px){
     .offcanvas-start {
@@ -367,8 +1121,22 @@ color: #5c5b4d;
     .section7 .bdr3{
         border-color: transparent;
     }
+
+    .GirlIsCalling img{
+       width: 70%;
+    }
    
  }
 
- 
-  
+ @media (max-width:  400px){
+
+    .Testimonials .quote-symbol img{
+        width: 100px;
+    }
+
+ }
+
+
+
+
+
